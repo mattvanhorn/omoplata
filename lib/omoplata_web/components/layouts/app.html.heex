@@ -1,28 +1,16 @@
 <header class="px-4 sm:px-6 lg:px-8">
-  <div class="flex items-center justify-between border-b border-zinc-100 py-3 text-sm">
-    <div class="flex items-center gap-4">
-      <a href="/">
-        <img src={~p"/images/logo.svg"} width="36" />
-      </a>
-      <p class="bg-brand/5 text-brand rounded-full px-2 font-medium leading-6">
-        v<%= Application.spec(:phoenix, :vsn) %>
-      </p>
+  <nav class="font-sans flex flex-col text-center sm:flex-row sm:text-left sm:justify-between py-4 px-6 bg-white shadow sm:items-baseline w-full">
+    <div class="mb-2 sm:mb-0">
+      <a href="/" class="text-2xl no-underline text-grey-darkest hover:text-blue-dark">Ralph Gracie BJJ Concord / Buena Vida Combatives</a>
     </div>
-    <div class="flex items-center gap-4 font-semibold leading-6 text-zinc-900">
-      <a href="https://twitter.com/elixirphoenix" class="hover:text-zinc-700">
-        @elixirphoenix
-      </a>
-      <a href="https://github.com/phoenixframework/phoenix" class="hover:text-zinc-700">
-        GitHub
-      </a>
-      <a
-        href="https://hexdocs.pm/phoenix/overview.html"
-        class="rounded-lg bg-zinc-100 px-2 py-1 hover:bg-zinc-200/80"
-      >
-        Get Started <span aria-hidden="true">&rarr;</span>
-      </a>
+    <div>
+      <a href="/about" class="text-lg no-underline text-grey-darkest hover:text-blue-dark ml-2">About Us</a>
+      <a href="/classes" class="text-lg no-underline text-grey-darkest hover:text-blue-dark ml-2">Classes</a>
+      <a href="/instructor" class="text-lg no-underline text-grey-darkest hover:text-blue-dark ml-2">Instructor</a>
+      <a href="/schedule" class="text-lg no-underline text-grey-darkest hover:text-blue-dark ml-2">Schedule</a>
+      <a href="/contact" class="text-lg no-underline text-grey-darkest hover:text-blue-dark ml-2">Contact</a>
     </div>
-  </div>
+  </nav>
 </header>
 <main class="px-4 py-20 sm:px-6 lg:px-8">
   <div class="mx-auto max-w-2xl">

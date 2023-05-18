@@ -18,6 +18,11 @@ defmodule OmoplataWeb.Router do
     pipe_through :browser
 
     get "/", PageController, :home
+    get "/about", PageController, :about
+    get "/classes", PageController, :classes
+    get "/instructor", PageController, :instructor
+    get "/schedule", PageController, :schedule
+    get "/contact", PageController, :contact
   end
 
   # Other scopes may use custom stacks.
