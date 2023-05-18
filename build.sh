@@ -7,8 +7,10 @@ mix deps.get --only prod
 MIX_ENV=prod mix compile
 
 # Compile assets
-mix assets.deploy
-mix phx.digest
+MIX_ENV=prod mix assets.deploy
+MIX_ENV=prod mix phx.digest
+
+MIX_ENV=prod mix phx.gen.release
 
 # Build the release and overwrite the existing release directory
 MIX_ENV=prod mix release --overwrite
